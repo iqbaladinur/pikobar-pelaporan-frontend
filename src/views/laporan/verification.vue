@@ -329,6 +329,7 @@ export default {
     },
     onTabChanges(value) {
       const ids = this.headers.length
+      this.listQuery.page = 1
       if (this.roles[0] === 'dinkeskota' && value === 'declined') {
         this.headers.splice(7, 2)
       } else if (ids === 7) {
